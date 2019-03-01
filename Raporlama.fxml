@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Raporlama">
+   <children>
+      <Label layoutX="72.0" layoutY="67.0" text="Günlük Kar" />
+      <Label layoutX="72.0" layoutY="106.0" text="Haftalık Kar" />
+      <Label layoutX="72.0" layoutY="145.0" text="Aylık Kar" />
+      <Label layoutX="72.0" layoutY="184.0" text="Yıllık Kar" />
+      <TextField fx:id="gunlukKarTF" editable="false" layoutX="300.0" layoutY="63.0" />
+      <TextField fx:id="haftalikKarTF" editable="false" layoutX="300.0" layoutY="102.0" />
+      <TextField fx:id="aylikKarTF" editable="false" layoutX="300.0" layoutY="141.0" />
+      <TextField fx:id="yillikKarTF" editable="false" layoutX="300.0" layoutY="180.0" />
+      <TextField fx:id="gunlukAracTF" editable="false" layoutX="300.0" layoutY="248.0" />
+      <Label layoutX="72.0" layoutY="252.0" text="Günlük Araç Sayısı" />
+      <TextField fx:id="haftalikAracTF" editable="false" layoutX="300.0" layoutY="283.0" />
+      <Label layoutX="72.0" layoutY="287.0" text="Haftalık Araç Sayısı" />
+      <TextField fx:id="aylikAracTF" editable="false" layoutX="300.0" layoutY="319.0" />
+      <Label layoutX="72.0" layoutY="323.0" text="Aylık Araç Sayısı" />
+      <TextField fx:id="yillikAracTF" editable="false" layoutX="300.0" layoutY="355.0" />
+      <Label layoutX="72.0" layoutY="359.0" text="Yıllık Araç Sayısı" />
+      <Accordion layoutX="14.0" layoutY="129.0" />
+      <Separator layoutX="4.0" layoutY="227.0" prefHeight="4.0" prefWidth="594.0" />
+   </children>
+</AnchorPane>

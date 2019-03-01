@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<SplitPane dividerPositions="0.36622073578595316" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="202.0">
+         <children>
+            <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#ucretlendirmeButtonClicked" prefHeight="37.0" prefWidth="146.0" text="Ücretlendirme" />
+            <Button layoutX="24.0" layoutY="70.0" mnemonicParsing="false" onAction="#aboneEkleButtonClicked" prefHeight="37.0" prefWidth="146.0" text="Abone Ekle" />
+            <Button layoutX="24.0" layoutY="116.0" mnemonicParsing="false" onAction="#raporlamaButtonClicked" prefHeight="37.0" prefWidth="146.0" text="Raporlama" />
+            <Button layoutX="24.0" layoutY="161.0" mnemonicParsing="false" onAction="#loglamaButtonClicked" prefHeight="37.0" prefWidth="146.0" text="Loglama" />
+            <Button layoutX="24.0" layoutY="205.0" mnemonicParsing="false" onAction="#aboneleriGosterButtonClicked" prefHeight="37.0" prefWidth="146.0" text="Aboneleri Göster" />
+            <PieChart fx:id="pieChart" layoutX="14.0" layoutY="283.0" prefHeight="122.0" prefWidth="200.0" />
+            <Button layoutX="24.0" layoutY="249.0" mnemonicParsing="false" onAction="#loadData" prefHeight="25.0" prefWidth="146.0" text="Doluluk Oranını Göster" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="391.0">
+         <children>
+            <Label layoutX="151.0" layoutY="59.0" prefHeight="19.0" prefWidth="90.0" text="Plaka No Giriniz" />
+            <TextField fx:id="plakaNoGirinizTF" layoutX="145.0" layoutY="86.0" prefHeight="19.0" prefWidth="102.0" promptText="Örn. &quot;35 SA 965&quot;" />
+            <Button layoutX="209.0" layoutY="123.0" mnemonicParsing="false" onAction="#cikisClicked" prefHeight="25.0" prefWidth="73.0" text="Çıkış" />
+            <Button layoutX="117.0" layoutY="123.0" mnemonicParsing="false" onAction="#girisClicked" prefHeight="25.0" prefWidth="73.0" text="Giriş" />
+            <TableView layoutX="78.0" layoutY="165.0" prefHeight="200.0" prefWidth="224.0">
+               <columns>
+                  <TableColumn fx:id="columnIsim" prefWidth="78.0" text="Plaka No" />
+                  <TableColumn fx:id="columnSoyisim" prefWidth="72.0" text="Saat" />
+                  <TableColumn fx:id="columnPlakaNo" prefWidth="72.0" text="Tarih" />
+               </columns>
+            </TableView>
+            <Label layoutX="117.0" layoutY="365.0" text="YTÜ Bilgisayar Mühendisliği - 2019" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

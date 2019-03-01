@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AbonelikEkle">
+   <children>
+      <Label layoutX="88.0" layoutY="53.0" text="Ad" />
+      <Label layoutX="259.0" layoutY="53.0" prefHeight="17.0" prefWidth="42.0" text="Soyad" />
+      <Label layoutX="428.0" layoutY="53.0" prefHeight="17.0" prefWidth="52.0" text="Plaka No" />
+      <TextField fx:id="adTF" layoutX="29.0" layoutY="83.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="soyadTF" layoutX="201.0" layoutY="83.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="plakaNoTF" layoutX="375.0" layoutY="83.0" prefHeight="25.0" prefWidth="157.0" promptText="Örn. &quot;35 SA 659&quot;" />
+      <Button layoutX="453.0" layoutY="204.0" mnemonicParsing="false" onAction="#aboneEkleButton" text="Abone Ekle" />
+      <Button layoutX="436.0" layoutY="327.0" mnemonicParsing="false" onAction="#aboneGuncelleButton" text="Abone Güncelle" />
+      <TextField fx:id="plakaNoGuncelleTF" layoutX="210.0" layoutY="286.0" prefHeight="25.0" prefWidth="157.0" promptText="Örn. &quot;35 SA 659&quot;" />
+      <Label layoutX="468.0" layoutY="256.0" prefHeight="17.0" prefWidth="42.0" text="Süre" />
+      <Label layoutX="268.0" layoutY="256.0" prefHeight="17.0" prefWidth="52.0" text="Plaka No" />
+      <TextField fx:id="telefonTF" layoutX="31.0" layoutY="156.0" prefHeight="25.0" prefWidth="157.0" promptText="(5XX)XXXXXXX" />
+      <Label layoutX="85.0" layoutY="126.0" text="Telefon" />
+      <Label layoutX="238.0" layoutY="126.0" text="Başlangıç Tarihi" />
+      <TextField fx:id="baslangicTarihiTF" layoutX="200.0" layoutY="156.0" prefHeight="25.0" prefWidth="157.0" promptText="Örn. &quot;XX.XX.XXXX&quot;" />
+      <TextField fx:id="bitisTarihiTF" layoutX="375.0" layoutY="156.0" prefHeight="25.0" prefWidth="157.0" promptText="Örn. &quot;XX.XX.XXXX&quot;" />
+      <Label layoutX="413.0" layoutY="126.0" text="Bitiş Tarihi" />
+      <TextField fx:id="baslangicTF" layoutX="383.0" layoutY="286.0" prefHeight="25.0" prefWidth="82.0" promptText="Başlangıç" />
+      <TextField fx:id="bitisTF" layoutX="472.0" layoutY="286.0" prefHeight="25.0" prefWidth="82.0" promptText="Bitiş" />
+   </children>
+</AnchorPane>

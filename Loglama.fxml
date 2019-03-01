@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Loglama">
+   <children>
+      <Label layoutX="146.0" layoutY="48.0" text="Başlangıç Tarihi" />
+      <Label layoutX="341.0" layoutY="48.0" text="Bitiş Tarihi" />
+      <TextField layoutX="112.0" layoutY="72.0" promptText="XX.XX.XXXX" />
+      <TextField layoutX="288.0" layoutY="72.0" promptText="XX.XX.XXXX" />
+      <Button layoutX="341.0" layoutY="108.0" mnemonicParsing="false" onAction="#gecmisiGosterButton" text="Geçmişi Göster" />
+      <TableView layoutX="171.0" layoutY="158.0" prefHeight="225.0" prefWidth="226.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="İsim" />
+          <TableColumn prefWidth="75.0" text="Soyisim" />
+            <TableColumn prefWidth="75.0" text="Plaka No" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
